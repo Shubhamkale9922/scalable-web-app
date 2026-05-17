@@ -13,117 +13,131 @@ app.get('/', (req, res) => {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scalable AWS DevOps Web App</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-slate-950 text-white min-h-screen">
+<body class="bg-[#1a0f12] text-white min-h-screen">
 
     <!-- Header -->
-    <header class="text-center py-10 border-b border-slate-800">
-        <h1 class="text-4xl md:text-5xl font-bold text-cyan-400">
-            Scalable AWS DevOps Web Application
+    <header class="text-center py-12 border-b border-[#4b1f2a] bg-[#2b1118] shadow-lg">
+        
+        <div class="text-6xl mb-4">🚀</div>
+
+        <h1 class="text-4xl md:text-6xl font-bold text-[#ff4d6d]">
+            Scalable AWS DevOps Web App
         </h1>
-        <p class="text-slate-400 mt-3 text-lg">
-            Built using Node.js • Express • Docker • AWS • CI/CD • Auto Scaling
+
+        <p class="text-gray-300 mt-4 text-lg">
+            Built using Node.js • Docker • AWS • ECS • CI/CD
         </p>
+
     </header>
 
     <!-- Main Container -->
-    <main class="max-w-6xl mx-auto p-6">
+    <main class="max-w-7xl mx-auto p-6">
 
         <!-- Status Card -->
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-lg text-center mb-10">
-            <h2 class="text-2xl font-semibold text-green-400 mb-2">
-                System Status: Running
+        <div class="bg-[#2b1118] border border-[#4b1f2a] rounded-3xl p-8 shadow-2xl text-center mb-10">
+
+            <div class="text-5xl mb-4">✅</div>
+
+            <h2 class="text-3xl font-bold text-green-400 mb-3">
+                Application Running Successfully
             </h2>
-            <p class="text-slate-400">
-                Application is successfully deployed on AWS infrastructure using Docker containers
+
+            <p class="text-gray-300 text-lg">
+                Fully automated scalable deployment running on AWS Cloud Infrastructure
             </p>
+
         </div>
 
         <!-- Tech Stack -->
-        <div class="grid md:grid-cols-5 gap-6 mb-10">
+        <h2 class="text-3xl font-bold text-center text-[#ff4d6d] mb-8">
+            ⚡ Technology Stack
+        </h2>
 
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-                <h3 class="text-cyan-400 font-semibold text-xl mb-2">Node.js</h3>
-                <p class="text-slate-400 text-sm">Backend runtime environment</p>
+        <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6 mb-14">
+
+            <div class="bg-[#2b1118] p-6 rounded-2xl border border-[#4b1f2a] hover:scale-105 transition">
+                <div class="text-4xl mb-3">🟢</div>
+                <h3 class="text-[#ff758f] font-bold text-xl mb-2">Node.js</h3>
+                <p class="text-gray-400 text-sm">Backend Runtime Environment</p>
             </div>
 
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-                <h3 class="text-cyan-400 font-semibold text-xl mb-2">Express</h3>
-                <p class="text-slate-400 text-sm">Web framework for APIs</p>
+            <div class="bg-[#2b1118] p-6 rounded-2xl border border-[#4b1f2a] hover:scale-105 transition">
+                <div class="text-4xl mb-3">⚡</div>
+                <h3 class="text-[#ff758f] font-bold text-xl mb-2">Express</h3>
+                <p class="text-gray-400 text-sm">Fast Web Framework</p>
             </div>
 
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-                <h3 class="text-cyan-400 font-semibold text-xl mb-2">Docker</h3>
-                <p class="text-slate-400 text-sm">Containerized application deployment</p>
+            <div class="bg-[#2b1118] p-6 rounded-2xl border border-[#4b1f2a] hover:scale-105 transition">
+                <div class="text-4xl mb-3">🐳</div>
+                <h3 class="text-[#ff758f] font-bold text-xl mb-2">Docker</h3>
+                <p class="text-gray-400 text-sm">Containerized Deployment</p>
             </div>
 
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-                <h3 class="text-cyan-400 font-semibold text-xl mb-2">AWS</h3>
-                <p class="text-slate-400 text-sm">Cloud infrastructure (EC2, ASG, NLB)</p>
+            <div class="bg-[#2b1118] p-6 rounded-2xl border border-[#4b1f2a] hover:scale-105 transition">
+                <div class="text-4xl mb-3">☁️</div>
+                <h3 class="text-[#ff758f] font-bold text-xl mb-2">AWS</h3>
+                <p class="text-gray-400 text-sm">Cloud Infrastructure</p>
             </div>
 
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-                <h3 class="text-cyan-400 font-semibold text-xl mb-2">CI/CD</h3>
-                <p class="text-slate-400 text-sm">GitHub Actions automation</p>
+            <div class="bg-[#2b1118] p-6 rounded-2xl border border-[#4b1f2a] hover:scale-105 transition">
+                <div class="text-4xl mb-3">🔄</div>
+                <h3 class="text-[#ff758f] font-bold text-xl mb-2">CI/CD</h3>
+                <p class="text-gray-400 text-sm">GitHub Actions Automation</p>
             </div>
 
         </div>
 
         <!-- Architecture Flow -->
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8">
+        <div class="bg-[#2b1118] border border-[#4b1f2a] rounded-3xl p-10 shadow-2xl">
 
-            <h2 class="text-2xl font-bold text-cyan-400 mb-6 text-center">
-                Deployment Architecture Flow
+            <h2 class="text-4xl font-bold text-center text-[#ff4d6d] mb-10">
+                🔥 Deployment Architecture Flow
             </h2>
 
-            <div class="space-y-4 text-center text-slate-300">
+            <div class="space-y-5 text-center">
 
-                <div class="p-3 bg-slate-800 rounded-lg">
-                    GitHub Repository (Source Code)
+                <div class="p-4 bg-[#3a1620] rounded-2xl text-lg font-semibold">
+                    📂 GitHub Repository
                 </div>
 
-                <div class="text-cyan-400">↓</div>
+                <div class="text-3xl text-[#ff758f]">⬇️</div>
 
-                <div class="p-3 bg-slate-800 rounded-lg">
-                    GitHub Actions (CI/CD Pipeline)
+                <div class="p-4 bg-[#3a1620] rounded-2xl text-lg font-semibold">
+                    ⚙️ GitHub Actions CI/CD Pipeline
                 </div>
 
-                <div class="text-cyan-400">↓</div>
+                <div class="text-3xl text-[#ff758f]">⬇️</div>
 
-                <div class="p-3 bg-slate-800 rounded-lg">
-                    Docker Build & Containerization
+                <div class="p-4 bg-[#3a1620] rounded-2xl text-lg font-semibold">
+                    🐳 Docker Image Build
                 </div>
 
-                <div class="text-cyan-400">↓</div>
+                <div class="text-3xl text-[#ff758f]">⬇️</div>
 
-                <div class="p-3 bg-slate-800 rounded-lg">
-                    EC2 Deployment Server (Primary Node)
+                <div class="p-4 bg-[#3a1620] rounded-2xl text-lg font-semibold">
+                    📦 Amazon ECR Repository
                 </div>
 
-                <div class="text-cyan-400">↓</div>
+                <div class="text-3xl text-[#ff758f]">⬇️</div>
 
-                <div class="p-3 bg-slate-800 rounded-lg">
-                    Auto Scaling Group (Creates/Removes Instances)
+                <div class="p-4 bg-[#3a1620] rounded-2xl text-lg font-semibold">
+                    🚀 Amazon ECS Fargate Deployment
                 </div>
 
-                <div class="text-cyan-400">↓</div>
+                <div class="text-3xl text-[#ff758f]">⬇️</div>
 
-                <div class="p-3 bg-slate-800 rounded-lg">
-                    Network Load Balancer (Traffic Distribution)
+                <div class="p-4 bg-[#3a1620] rounded-2xl text-lg font-semibold">
+                    ⚖️ Load Balancer Traffic Distribution
                 </div>
 
-                <div class="text-cyan-400">↓</div>
+                <div class="text-3xl text-[#ff758f]">⬇️</div>
 
-                <div class="p-3 bg-slate-800 rounded-lg">
-                    Docker Containers Running Application
-                </div>
-
-                <div class="text-cyan-400">↓</div>
-
-                <div class="p-3 bg-slate-800 rounded-lg">
-                    Users (Browser Access)
+                <div class="p-4 bg-[#3a1620] rounded-2xl text-lg font-semibold">
+                    🌍 Users Access Application
                 </div>
 
             </div>
@@ -133,16 +147,26 @@ app.get('/', (req, res) => {
     </main>
 
     <!-- Footer -->
-    <footer class="text-center text-slate-500 py-8 border-t border-slate-800 mt-10">
-        Deployed using AWS + Docker DevOps Architecture | Scalable • Reliable • Automated
+    <footer class="text-center text-gray-400 py-8 border-t border-[#4b1f2a] mt-12 bg-[#2b1118]">
+
+        <div class="text-3xl mb-3">❤️</div>
+
+        <p class="text-lg">
+            Deployed using Modern AWS DevOps Architecture
+        </p>
+
+        <p class="mt-2 text-sm text-gray-500">
+            Scalable • Reliable • Automated • Containerized
+        </p>
+
     </footer>
 
 </body>
 
 </html>
     `);
+
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+app.listen(PORT, () => { 
+    console.log(`Server running on port ${PORT}`); });

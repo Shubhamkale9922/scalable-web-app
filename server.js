@@ -149,10 +149,10 @@ app.get('/', (req, res) => {
     <!-- Footer -->
     <footer class="text-center text-gray-400 py-8 border-t border-[#4b1f2a] mt-12 bg-[#2b1118]">
 
-        <div class="text-3xl mb-3">❤️ Love You</div>
+        <div class="text-3xl mb-3">❤️ Love You Shubham Dada </div>
 
         <p class="text-lg">
-            Deployed using Modern AWS DevOps Architecture
+            Deployed using Modern AWS DevOps Architecture And Some GPT Magic ✨ 
         </p>
 
         <p class="mt-2 text-sm text-gray-500">

@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
 
@@ -149,7 +149,7 @@ app.get('/', (req, res) => {
     <!-- Footer -->
     <footer class="text-center text-gray-400 py-8 border-t border-[#4b1f2a] mt-12 bg-[#2b1118]">
 
-        <div class="text-3xl mb-3">❤️Love You</div>
+        <div class="text-3xl mb-3">❤️ Love You</div>
 
         <p class="text-lg">
             Deployed using Modern AWS DevOps Architecture
@@ -168,5 +168,6 @@ app.get('/', (req, res) => {
 
 });
 
-app.listen(PORT, () => { 
-    console.log(`Server running on port ${PORT}`); });
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});

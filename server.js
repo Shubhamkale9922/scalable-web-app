@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
             Scalable AWS DevOps Web Application
         </h1>
         <p class="text-slate-400 mt-3 text-lg">
-            Built using Node.js • Express • AWS • CI/CD • Auto Scaling
+            Built using Node.js • Express • Docker • AWS • CI/CD • Auto Scaling
         </p>
     </header>
 
@@ -37,12 +37,12 @@ app.get('/', (req, res) => {
                 System Status: Running
             </h2>
             <p class="text-slate-400">
-                Application is successfully deployed on AWS infrastructure
+                Application is successfully deployed on AWS infrastructure using Docker containers
             </p>
         </div>
 
         <!-- Tech Stack -->
-        <div class="grid md:grid-cols-4 gap-6 mb-10">
+        <div class="grid md:grid-cols-5 gap-6 mb-10">
 
             <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
                 <h3 class="text-cyan-400 font-semibold text-xl mb-2">Node.js</h3>
@@ -52,6 +52,11 @@ app.get('/', (req, res) => {
             <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
                 <h3 class="text-cyan-400 font-semibold text-xl mb-2">Express</h3>
                 <p class="text-slate-400 text-sm">Web framework for APIs</p>
+            </div>
+
+            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                <h3 class="text-cyan-400 font-semibold text-xl mb-2">Docker</h3>
+                <p class="text-slate-400 text-sm">Containerized application deployment</p>
             </div>
 
             <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
@@ -88,6 +93,12 @@ app.get('/', (req, res) => {
                 <div class="text-cyan-400">↓</div>
 
                 <div class="p-3 bg-slate-800 rounded-lg">
+                    Docker Build & Containerization
+                </div>
+
+                <div class="text-cyan-400">↓</div>
+
+                <div class="p-3 bg-slate-800 rounded-lg">
                     EC2 Deployment Server (Primary Node)
                 </div>
 
@@ -106,6 +117,12 @@ app.get('/', (req, res) => {
                 <div class="text-cyan-400">↓</div>
 
                 <div class="p-3 bg-slate-800 rounded-lg">
+                    Docker Containers Running Application
+                </div>
+
+                <div class="text-cyan-400">↓</div>
+
+                <div class="p-3 bg-slate-800 rounded-lg">
                     Users (Browser Access)
                 </div>
 
@@ -117,7 +134,7 @@ app.get('/', (req, res) => {
 
     <!-- Footer -->
     <footer class="text-center text-slate-500 py-8 border-t border-slate-800 mt-10">
-        Deployed using AWS DevOps Architecture | Scalable • Reliable • Automated
+        Deployed using AWS + Docker DevOps Architecture | Scalable • Reliable • Automated
     </footer>
 
 </body>

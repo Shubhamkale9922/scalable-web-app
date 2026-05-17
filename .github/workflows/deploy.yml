@@ -48,5 +48,5 @@ jobs:
         run: |
           aws ecs update-service \
             --cluster scalable-web-app-cluster \
-            --service scalable-web-app-service \
+            --service scalable-web-app-taskshubham \
             --force-new-deployment
